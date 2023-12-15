@@ -25,7 +25,7 @@ function closeImagePopup() {
 
 function checkAnswer() {
     var userAnswer = document.getElementById("userAnswer").value;
-    var correctAnswer = "ABCD"; // Change this to the correct answer
+    var correctAnswer = "542A"; // Change this to the correct answer
 
     if (userAnswer === correctAnswer) {
         document.getElementById("result").innerText = "Correct! Well done!";
