@@ -10,22 +10,9 @@ function closeImagePopup() {
     document.getElementById('imagePopup').style.display = 'none';
 }
 
-/*function checkAnswer() {
-    var userAnswer = document.getElementById("userAnswer1").value;
-    var correctAnswer = "ABCD"; // Change this to the correct answer
-
-    if (userAnswer === correctAnswer) {
-        document.getElementById("result").innerText = "Correct! Well done!";
-        document.getElementById("imageContainer1").style.display = "flex";
-    } else {
-        document.getElementById("result").innerText = "Incorrect. Try again.";
-        document.getElementById("imageContainer1").style.display = "none";
-    }
-}*/
-
 function checkAnswer() {
     var userAnswer = document.getElementById("userAnswer").value;
-    var correctAnswer = "542A"; // Change this to the correct answer
+    var correctAnswer = "ABCD"; // Change this to the correct answer
 
     if (userAnswer === correctAnswer) {
         document.getElementById("result").innerText = "Correct! Well done!";
@@ -44,7 +31,7 @@ function checkAnswer() {
 
 function proceedToNextRound() {
     // Redirect to round2.html
-    window.location.href = "round2.html";
+    window.location.href = "https://forms.gle/42btjPZDRN6V2rdi6";
 }
 
 // scripts.js
