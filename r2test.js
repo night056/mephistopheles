@@ -71,19 +71,6 @@ function checkAnswer5() {
 }
 
 function proceedToNextRound() {
-    // Call checkAnswer5 before proceeding to the next round
-    checkAnswer5();
     
-    var userAnswer = document.getElementById("userAnswer5").value;
-    var correctAnswer = "GOTO"; // Change this to the correct answer
-
-    if (userAnswer === correctAnswer) {
-        document.getElementById("result5").innerText = "Correct! Well done!";
-        // Redirect to round3.html only if all answers are correct
-        if (correctAnswersCount === 4) {
-            window.location.href = 'round3.html';
-        }
-    } else {
-        document.getElementById("result5").innerText = "Incorrect. Try again.";
-    }
+            window.location.href = 'https://forms.gle/R84XhTk4pXQ1hZYR6';
 }
