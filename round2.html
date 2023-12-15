@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mephistopheles Round 2</title>
+    <link rel="stylesheet" href="r2test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mephistopheles Round 2</h1>
+        <p>Welcome back, mortal! Prove your knowledge once more against my fiendish code. For each snippet below, decipher the output and enter it in the input field. Then, unleash your knowledge for each code block individually!</p>
+        <h3>Code #1</h3>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+    int main() {
+    int a = 5;
+    int b = 10;
+    a = a ^ b ^ (b = a);
+    printf("%d %d\n", a, b);
+    return 0;
+}
+</pre>
+
+        <label for="userAnswer1">Your Answer:</label>
+        <input type="text" id="userAnswer1">
+        <button onclick="checkAnswer1()">Check Answer</button>
+        <p id="result1"></p>
+        <div id="imageContainer1" style="display: none;">
+            <img src="r2c2.1.png" alt="Correct Image">
+            <img src="r2c2.2.jpeg" alt="Celebration Image">
+        </div>
+        <h3>Code #2</h3>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+    int main() {
+    int a = 3, b = 5;
+    printf("%d\n", (a++) + (++b) - (a--) + (--b));
+    return 0;
+}
+</pre>
+<label for="userAnswer2">Your Answer:</label>
+        <input type="text" id="userAnswer2">
+        <button onclick="checkAnswer2()">Check Answer</button>
+        <p id="result2"></p>
+        <br>
+        <div id="imageContainer2" style="display: none;">
+            <img src="r2c3.1.png" alt="Correct Image">
+            <img src="r2c3.2.png" alt="Celebration Image">
+        </div>
+
+        <h3>Code #3</h3>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+    int main() {
+    char str[] = "abcdefgh";
+    printf("%c\n", str[2] - 'a' + 'A');
+    return 0;
+}
+</pre>
+<label for="userAnswer3">Your Answer:</label>
+        <input type="text" id="userAnswer3">
+        <button onclick="checkAnswer3()">Check Answer</button>
+        <p id="result3"></p>
+        <br>
+        <div id="imageContainer3" style="display: none;">
+            <img src="r2c1.1.png" alt="Correct Image">
+            <img src="r1c1.2.jpeg" alt="Celebration Image">
+        </div>
+    
+        <h3>Code #4</h3>
+    <pre><code>
+        #include &lt;stdio.h&gt;
+        int main() {
+        char code[] = "OPREDICTION";
+        for (int i = 0; code[i] != '\0'; i++) {
+                code[i] = code[i] + 1;
+            }
+        printf("Predict the output: %s\n", code);
+        return 0;
+        }
+</pre>
+<label for="userAnswer4">Your Answer:</label>
+        <input type="text" id="userAnswer4">
+        <button onclick="checkAnswer4()">Check Answer</button>
+        <p id="result4"></p>
+        <br>
+        <div id="imageContainer4" style="display: none;">
+            <img src="r2c4.1.png" alt="Correct Image">
+            <img src="r2c4.2.jpeg" alt="Celebration Image">
+        </div>
+        <label for="userAnswer5">Password to enter next round:</label>
+        <input type="text" id="userAnswer5">
+        <button id="proceedButton" onclick="proceedToNextRound()">Proceed to Next Round</button>
+        <p id="result5"></p>
+
+    </div>
+    
+
+    <script src="r2test.js"></script>
+</body>
+</html>

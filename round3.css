@@ -1,0 +1,146 @@
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  text-align: center;
+  color:#e74c3c;
+}
+
+.typewriter h1 {
+  font-size: 50px;
+  width: 20vw;
+  color: #e74c3c;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', monospace;
+  border-right: 5px solid red; 
+  white-space: nowrap;
+  margin:  auto;
+  letter-spacing: -1px; 
+  animation: 
+    typing 2s steps(40,end),
+    blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+}
+
+
+label {
+  background-color: #e74c3c;
+  height: 10vh;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  color: #3498db;
+  background-color: transparent;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+#maininput{
+  border-radius: 20px;
+  top: 125px;
+  text-align: center;
+  width: 100vw;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.inputboxes{
+  text-align: center;
+  width: 90px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.inputboxes:hover{
+  border-color: #e74c3c;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.8);
+  outline: none;
+}
+
+.inputboxes:focus{
+  border-color: #e74c3c;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.8);
+  outline: none;
+}
+
+.map{
+  width: 24vw;
+  height: 49vh;
+}
+
+#mainbox{
+  width: 24vw;
+  height: 49vh;
+  justify-content: center;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 125px 125px 125px;
+  grid-template-rows: 125px 125px 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  
+}
+
+.boxes {
+  padding: 0px;
+  border-radius: 5px;
+  background-color: red;
+  animation: redlight 2s infinite;
+  transition: 0.5s;
+  perspective: 1000px;
+}
+
+/* .boxesback{
+  position: relative;
+ 
+
+}
+
+.boxes:hover .boxesback{
+  transform: rotateX('180deg');
+
+} */
+/* 
+@keyframes redlight {
+  0%     { box-shadow: red 0px 0px 50px; }
+  100%    { box-shadow: none }
+  100%   { box-shadow: red 0px 0px 50px; }
+  
+} */
+
+@keyframes redlight {
+  0% {
+    box-shadow: 0 0 2000px red;
+  }
+  50% {
+    box-shadow: 0 0 2000px rgb(139, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 1000px red;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="round1.css">
+    <script src="round1.css" defer></script>
+    <title>Round 1</title>
+</head>
+<body>
+    <p>The lab has been taken over, solve these circuits in an attempt to restore electricity of the lab.</p>
+    <div class="image-container">
+        <div class="image-wrapper" onclick="showImage('q1.jpg', 'Circuit 1')">
+            <img src="q1.jpg" alt="Image 1">
+            <div class="caption">Circuit 1 A: 1 B: 0</div>
+        </div>
+        <div class="image-wrapper" onclick="showImage('q2.jpg', 'Circuit 2')">
+            <img src="q2.jpg" alt="Image 2">
+            <div class="caption">Circuit 2 A: 1 B: 0</div>
+        </div>
+        <div class="image-wrapper" onclick="showImage('q3.jpg', 'Circuit 3')">
+            <img src="q3.jpg" alt="Image 3">
+            <div class="caption">Circuit 3 A: 1 B: 0 C: 1</div>
+        </div>
+        <div class="image-wrapper" onclick="showImage('q4.jpg', 'Circuit 4')">
+            <img src="q4.jpg" alt="Image 4">
+            <div class="caption">Circuit 4</div>
+        </div>
+    </div>
+    <input type="text" id="userAnswer">
+    <button onclick="checkAnswer()">Check Answer</button>
+    <p id="result"></p>
+    <div id="buttonContainer">
+        <button id="proceedButton" onclick="proceedToNextRound()">Proceed to Next Round</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="imagePopup" class="popup">
+        <span class="close" onclick="closeImagePopup()">&times;</span>
+        <div class="popup-content">
+            <div id="popupCaption" class="caption"></div>
+            <img id="popupImage" src="" alt="Enlarged Image">
+        </div>
+    </div>
+    <script src="round1.js"></script>
+    <!-- Message at the end of the webpage -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-section {
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imageContainer img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#buttonContainer {
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
