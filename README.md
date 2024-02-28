@@ -5,6 +5,6 @@ The fate of humanity is in your hands. An AI made to save world has gone rogue a
 
 ##Contributors
 1. [Alwin Joseph](https://github.com/AlwinJoseph)
-2. [Nevin Joyce]()
+2. [Nevin Joyce](https://github.com/nevinjoyce)
 3. [Noel Mathen Eldho](https://github.com/noelmathen)
 4. [Roshni Aldrin](https://github.com/night056)
